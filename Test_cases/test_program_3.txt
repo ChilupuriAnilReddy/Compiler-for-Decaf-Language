@@ -1,0 +1,45 @@
+class program
+{
+	int a[100000];
+	int b[100000];
+	int main(int argv)
+	{
+		int n;
+		int i;
+		int j;
+		int c ;
+		int max;
+		int totmax;
+		j=0;
+		c=1;
+		totmax=1;
+		callout("scanf",n);
+		for i=0,n
+		{
+			callout("scanf",a[i]);
+			b[i] = 1;
+		}
+		
+		for i= 0 , n-1
+		{
+			max = 0;
+			for j = 0 , i-1
+			{
+				if(a[j] < a[i])
+				{
+					if(max < b[j])
+					{
+						max = b[j];
+					}
+				}
+			}
+			b[i] = b[i] + max;
+			if(totmax < b[i])
+			{
+				totmax = b[i];
+			}
+		}
+		callout("printf", totmax);
+		return 0;
+	}
+}

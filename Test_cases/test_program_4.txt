@@ -1,0 +1,40 @@
+class program
+{
+	int aa[32];
+	int bb[32];
+	int main(int argv)
+	{
+		int a;
+		int b;
+		int c;
+		int d;
+		int i;
+		c = 0;
+		d = 1;
+		callout("scanf",a,b);
+		
+		for i=0 , 31
+		{
+			aa[i] = a%2;
+			a=a/2;
+		}
+		for i=0 , 31
+		{
+			bb[i] = b%2;
+			b=b/2;
+		}
+		
+		for i=0 , 31
+		{
+			if(aa[i] != bb[i])
+			{
+				c = c + d;
+				
+			}
+			d = d * 2;
+		}
+		callout("printf",c);
+		return 0;
+
+	}
+}

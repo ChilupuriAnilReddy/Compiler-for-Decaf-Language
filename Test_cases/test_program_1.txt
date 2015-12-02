@@ -1,0 +1,33 @@
+class Program
+{
+	
+	
+
+	int fib(int a1,int b1)
+	{
+		int c;
+		c = a1 + b1;
+		callout("printf","%d",c);
+		callout("printf","%s",",");	
+		fib(b1,c);
+		return 0;
+	}
+	
+
+	int main(int a11)
+	{
+		int a,b;
+		a = 1;
+		b = 2;
+		callout("printf","%d",a);
+		callout("printf","%s",",");
+		callout("printf","%d",b);
+		callout("printf","%s",",");
+		fib(a,b);		
+		return 0;
+
+	}
+		
+
+	
+}

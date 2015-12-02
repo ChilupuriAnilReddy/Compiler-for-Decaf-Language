@@ -1,0 +1,32 @@
+class Program
+{
+	
+	int a[100];
+
+	
+	
+
+		
+
+	int abc1(int xx)
+	{
+		int x,y,z;
+		boolean y11;
+		for x = y , z
+		{
+			x = x + 1;
+		}
+		if(true)
+		{
+		}
+		if(x)
+		{
+			if(y11)
+			{
+
+			}
+		}
+		
+	  	abc1(1);
+	}
+}

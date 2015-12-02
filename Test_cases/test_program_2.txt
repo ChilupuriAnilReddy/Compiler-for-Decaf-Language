@@ -1,0 +1,23 @@
+class program
+{
+
+	
+	 int givenum(int x)
+	{
+		return 10;
+	}
+
+	int main(int argv)
+	{
+		int c;
+		c = givenum(1);
+		callout("printf","%d",c);
+		callout("printf","%s",",");
+		return 0;
+	}
+	
+	
+	
+	
+	
+}
